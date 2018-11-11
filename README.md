@@ -1,8 +1,19 @@
-# Bridging Nonlinearities and Stochastic Regularizers with Gaussian Error Linear Units
-This software allows users to reproduce the results in Bridging Nonlinearities and Stochastic Regularizers with Gaussian Error Linear Units, Dan Hendrycks and Kevin Gimpel 2016.
+# Gaussian Error Linear Units (GELUs)
+This software allows users to reproduce the results in Gaussian Error Linear Units (GELUs), Dan Hendrycks and Kevin Gimpel 2016.
 
 # GELU Approximations
 The `sigmoid(1.702 * x) * x` approximation is fast but is somewhat inaccurate. Meanwhile `0.5 * x * (1 + tanh(x * 0.7978845608 * (1 + 0.044715 * x * x)))` is slower but more accurate.
 
 # Execution
 Please install Tensorflow, Lasagne, and Python 3+.
+
+## Citation
+
+If you find this useful in your research, please consider citing:
+
+    @article{hendrycks2016gelu,
+      title={Gaussian Error Linear Units (GELUs)},
+      author={Hendrycks, Dan and Gimpel, Kevin},
+      journal={arXiv},
+      year={2016}
+    }
