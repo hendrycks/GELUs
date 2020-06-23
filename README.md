@@ -4,6 +4,8 @@ This software allows users to reproduce the results in Gaussian Error Linear Uni
 # GELU Approximations
 The `sigmoid(1.702 * x) * x` approximation is fast but is somewhat inaccurate. Meanwhile `0.5 * x * (1 + tanh(x * 0.7978845608 * (1 + 0.044715 * x * x)))` is slower but more accurate.
 
+However, exact versions are now available in pytorch, so approximations are no longer necessary for suitable speed.
+
 # Execution
 Please install Tensorflow, Lasagne, and Python 3+.
 
